@@ -5,18 +5,21 @@
             Checkpoint HTML
         </title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
         <!-- here in nav tag used to classes that is navbar and background-->
         <nav class="navbar background--">
         <!-- we have used list tag that is ul to list the items -->
-        <ul class="nav-list">
-            <li><a href="accueil.html">Accueil</a></li>
-            <li><a href="A Propos.html">A Propos</a></li>
-            <li><a href="Travail.html">Travail</a></li>
-            <li><a href="CV.html">CV</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
+        <div>
+            <ul class="nav-list">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="A Propos.html">A Propos</a></li>
+                <li><a href="Travail.html">Travail</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
         <!-- we have used rightnav in order to design the searchbar -->
         <div class="rightnav">
         <!-- the value that search bar will take is text -->
@@ -24,50 +27,67 @@
         <button class="button button-sm">rechercher</button>
             </div>
         </nav> 
+        <br>
         <section>
-            <h1>Accueil</h1>
-            <p>Je me nomme Harvey NDIAYE développeur à GOMYCODE Sénégal depuis bientôt 2ans.
-                Je propose mes services aux entreprises publiques et privées. 
-            </p>
+            <h1 id="brown">Accueil</h1>
+            <div>
+                <p>Je me nomme Harvey NDIAYE développeur à GOMYCODE Sénégal depuis bientôt 2ans.
+                    <br>
+                    Je propose mes services aux entreprises publiques et privées. 
+                </p>
+            </div>
+            
         <!-- we have used image -->
             <img src="Patrick.jpg" height="200" width="400" alt="erreur"/>
         </section>
+        <br>
         <section>
-            <h2>Travail</h2>
-            <p>Mon travail consiste à créer des sites web des applications etc. ,
-             tout en respectant les désirs des clients.
-            </p>
+            <h2 id="brown">Travail</h2>
+            <div>
+                <p>Mon travail consiste à créer des sites web des applications etc. ,
+                    tout en respectant les désirs des clients.
+                   </p>
+            </div>
+            
         <!-- we have used video mp4 -->
             <video controls>
                 <source src="file_example.mp4" type="video/mp4"/>
             </video>
         </section>
+        <br>
         <section>
-            <h2>CV</h2>
+            <h2 id="brown">CV</h2>
         </section>
+        <br>
         <section>
-            <h2>Contact</h2>
-        <!-- e have used form tag -->
+            <h2 id="brown">Contact</h2>
+            <div>
+                <!-- e have used form tag -->
             <form>
                 <label for="name">name</label>
                 <input type="text" id="name"/>
+                <br> <br>
                 <label for="surname">surname</label> 
                 <input type="text" id="surname"/>
-                <br/> <br/>
+                <br> <br>
                 <label for="email">email</label>
                 <input type="email" id="email"/>
-                <br> <br/>
+                <br> <br>
                 <label for="number phone">number</label>
                 <input type="number" id="number"/>
-                <br/> <br/>
+                <br> <br>
                 <textarea for="comment">comment :</textarea>
-                <br/> <br/>
+                <br> <br>
                 <button type="button">Submit</button>
             </form>
+            </div>
         </section>
-        <br/>
-        <footer>
-            Copyright SICAP SA
-        </footer>
+        <br>
+        <div>
+            <footer class="pieddepage">
+                Copyright SICAP SA
+            </footer>
+        </div>
+        
     </body>
 </html>
